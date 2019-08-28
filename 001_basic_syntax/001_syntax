@@ -1,0 +1,60 @@
+##########################python syntax ############################
+
+----> syntax 
+----> program
+----> Intruction
+----> types of instructions
+
+----> python Names ---> keywords , identifiers
+--->  Python variables
+--->  Python Datatype
+
+########################################################################
+
+# syntax :-
+-----------
+
+---> The structure for writing an instruction with in the program 
+#########################################################################
+# program :-
+-------------
+
+---> Program is a set instructions/ statements to do any one specific task
+
+##########################################################################
+# instruction :-
+-----------------
+
+---> A line of code is called is an instruction
+
+# Types of instructions
+
+	1. Python comments
+	2. Python statements
+
+#-> 1. python comments
+	----> With in the program if you want to hide the some line we can use comments
+	----> Comments are used for to stop the execution by cpu
+	---->  Single line comment   (  # )
+	--->  Multiline comments  ('''   ''')
+
+#-> 2 python statements
+
+	---> An instructions which are executed by cpu
+
+##########################################################################	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
