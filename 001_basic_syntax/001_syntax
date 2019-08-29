@@ -44,6 +44,266 @@
 
 ##########################################################################	
 		
+# ----> Python Keywords<---------
+
+---> Keywords are the predefined / built-in words , which means which are already defined in python interpreter
+
+---> we have 31---> python2 ,  35----> python3
+
+--->Each and every keyword which having its own specific task
+
+---> keyword is python module , which having all keywords
+
+
+Python 2.7.12 (default, Nov 12 2018, 14:36:49) 
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import keyword
+>>> keyword.kwlist
+#['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> len(keyword.kwlist)
+31
+>>> print "hello"
+hello
+>>> a = 10
+>>> a
+10
+>>> del a
+
+Python 3.5.2 (default, Nov 12 2018, 13:43:14) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import keyword
+>>> keyword.kwlist
+#
+#['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> len(keyword.kwlist)
+33
+>>> 
+
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import keyword
+>>> keyword.kwlist
+#['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> len(keyword.kwlist)
+35
+>>> 
+
+### keyword list not fixed , based new version we might increase keywords
+############################################################################
+###########################################################################
+
+########### Python Identifiers #######################################
+######################################################################
+
+----> User Defined names / programmer defined names 
+---> Which are used for to identify the variables , functions, classes based 
+     names
+---> Identifiers are Name enitties for variables , functions , classes
+
+
+# Rules for identifier
+
+---> we can use alphabets  ---> a-z  /  A - Z
+---> we can  use digits ------> 0-9  
+---> we can use underscore ---> _
+---> don't use 1st letter is digits
+---> don't use keywords are as an identofier
+---> don't use special characters
+
+
+##########################################################################
+################## Python variables ###############################
+#####################################################################
+
+---> Variables are the names , which are used for to reference memory loc for 
+to store / hold some data
+
+---> Python it will ignore the variable declaration
+--> direclty we can assign the data to names
+
+
+
+>>> varAS12_ =123
+>>> var = 123
+>>> VAFGA =123
+>>> _varWE = 123
+>>> 2var =134
+  File "<stdin>", line 1
+    2var =134
+       ^
+SyntaxError: invalid syntax
+>>> var@23 =134
+  File "<stdin>", line 1
+SyntaxError: can't assign to operator
+>>> while =123
+  File "<stdin>", line 1
+    while =123
+          ^
+SyntaxError: invalid syntax
+>>> 
+
+
+
+#####################important note ##################
+
+---> in python data already in memory loc
+---> when we assign the daata variable , the memoory loc is same as data
+---> i modify the daata to same variable , the memory loc can changes
+
+>>> id(123)
+10923232
+>>> id(10)
+10919616
+>>> var = 123
+>>> id(var)
+10923232
+>>> b = 123
+>>> id(b)
+10923232
+>>> b = 10
+>>> id(b)
+10919616
+>>> 
+######################################################################
+############### python data types ###################################
+#####################################################################
+
+---> Datatypes are the predefined classes
+---> To specify the what type of data holded by variable
+
+# Python datatypes are 2 types
+
+# 1 . python fundamental datatypes
+
+---> A single variable can hold single data
+
+	# int   ----> 12 , 45, 89,34556
+	# float ---->  123.4354546 , 0.45464
+	# complex -->  x+yj --->   12 + 34j
+	# bool   ---> True / False 
+	# None   ---> None
+
+ var =123
+>>> type(var)
+<class 'int'>
+>>> var = 12.4553
+>>> type(var)
+<class 'float'>
+>>> var = 12+4j
+>>> type(var)
+<class 'complex'>
+>>> var = True
+>>> type(var)
+<class 'bool'>
+>>> var = False
+>>> type(var)
+<class 'bool'>
+>>> var = None
+>>> type(var)
+<class 'NoneType'>
+>>> var
+>>> var =123
+>>> var
+123
+>>> var = None
+>>> var
+>>> 
+
+------------------------------------------------
+
+# 2. Python sequencial datatypes
+
+
+---> a single variable can hold multiple data elements
+
+
+	# str ---> group of character ''/ "" / ''' '''/ """ """
+			>>> var = 'soc'
+			>>> type(var)
+				<class 'str'>
+			>>> var = "soc"
+			>>> type(var)
+				<class 'str'>
+			>>> var ='''soc'''
+			>>> type(var)
+				<class 'str'>
+			>>> var = """soc"""
+			>>> type(var)
+				<class 'str'>
+			>>> 
+
+
+	# list --> group of any elements --->   [ ]
+	# tuple--> group of elements ----->   ()
+	# set ---> group of elements ----->   { }
+	# dict --> group of items ( key : value) ---> { k1 : v1 , k2 : v2 }
+
+
+
+
+>>> var = [12, 45.45 ,6+4j]
+>>> type(var)
+	<class 'list'>
+>>> var = (12,34.56,6+6j)
+>>> type(var)
+	<class 'tuple'>
+>>> var = {12,45.56,6+4j}
+>>> type(var)
+	<class 'set'>
+>>> var = { 12 : "soc" , 45.56 : 78}
+>>> type(var)
+		<class 'dict'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
