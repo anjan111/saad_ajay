@@ -1,0 +1,60 @@
+################### function######################
+-----------
+--> It is set of instruction to do any one specific task
+--> it was sub programs for your main program
+
+######There are 2 types ########3
+
+---> User defined functions 
+----------------------------
+---> the functions which are defined by programer ( programmer defined function ) 
+
+
+
+---> Built-in functions 
+---------------------------
+---> The functions which are already defined inside of the python Interpreter
+
+#######   input functions ######
+----> The functions which are used for to read the dadta from keyboard
+	1. input() ------> python2/3
+	2. raw_input()---> python2
+
+######    Output functions #############
+
+---> Which are used for to display the data on monitor
+---> In python2 ---> print keyword ---> like a statement , function
+	print daata  ===> statement
+	print(data) ===>  function
+---> In python3 ---> print function 
+	print(data)
+#########################################
+
+type() ---> To know the datatype of object
+
+id () ---> To know the memory loc of object
+
+##########################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
