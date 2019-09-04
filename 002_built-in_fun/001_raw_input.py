@@ -1,7 +1,14 @@
-###########  This is used for to understand raw_input ###########
+# raw_input ----> reading the from keyboard
+# print    -----> to displying the daata on monitor
+# type     -----> To know the datatype of variable
+# id       -----> TO  know the memory location location
+'''
+WAP read any datatype data by raw_input function and print data
+datatype
+memory
+'''
 
-var = raw_input( "enter some data : ") # reading the data
-print "data with in var : ",var        # printing the daata using statement
-print(type(var))                       # printing datatype using print and type
-print "memory loc : ",id(var)          # printing memory loc using print and id
-
+var = raw_input("enter some data : ")
+print "data in var : ",var
+print(type(var))
+print(id(var))
